@@ -30,16 +30,18 @@ class linkedlist:
                 n = n.next
             n.next = new_node
 
+    
+
 
 
 # example to test the add_begin() function
-l1 = linkedlist()
-l1.add_begin(10)
-l1.add_end(90)
-l1.add_begin(20)
-l1.add_end(100)
+# l1 = linkedlist()
+# # l1.add_begin(10)
+# # l1.add_end(90)
+# # l1.add_begin(20)
+# l1.add_end(100)
 
-l1.printLL()
+# l1.printLL()
 
 
 
