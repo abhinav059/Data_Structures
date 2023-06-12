@@ -30,17 +30,45 @@ class linkedlist:
                 n = n.next
             n.next = new_node
 
+            
+    def add_after(self,data,x):
+        n = self.head
+        while n is not None:
+            if x == n.data:
+                break
+            n = n.next
+        if n is None:
+            print("Node is not present in LINKED LIST")
+        else:
+            new_node = node(data)
+            new_node.next = n.next
+            n.next = new_node
+
+    def add_before(self,data,x):
+        n = self.head
+        while n is not None:
+            if x == n.data:
+                break
+            n = n.next
+        if n is None:
+            print("Node is not present in LINKED LIST")
+        else:
+            new_node = node(data)
+            new_node.next = n.next
+            
     
-
-
 
 # example to test the add_begin() function
 # l1 = linkedlist()
-# # l1.add_begin(10)
-# # l1.add_end(90)
-# # l1.add_begin(20)
+# l1.add_begin(10)
+# l1.add_end(90)
+# l1.add_begin(20)
 # l1.add_end(100)
-
+# l1.add_begin(100)
+# l1.add_after(11,20)
+# l1.add_after(90,90)
+# l1.add_begin(90)
+# l1.add_after(90,90)
 # l1.printLL()
 
 
