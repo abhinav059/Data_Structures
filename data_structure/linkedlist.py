@@ -82,10 +82,10 @@ class linkedlist:
 # l3 = node("wed")
 # l4 = node("thu")
 
-# l1.head.next = l2
-# l2.next = l3
-# l3.next = l4
+l1.head.next = l2
+l2.next = l3
+l3.next = l4
 
-# print("helloooo")
+print("helloooo")
 
-# l1.printLL()
+l1.printLL()
